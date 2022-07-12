@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <tabs>
+        <pdfgeneratorconfig translate="label" module="pdfgenerator"> <!--No activity just name - It has to be unique-->
+            <label>Ea Design PDF</label>
+            <sort_order>999</sort_order>
+        </pdfgeneratorconfig>
+    </tabs>
+
+    <sections>
+        <pdfgeneratorconfig_opt translate="label" module="pdfgenerator"> <!--Sections meniu stanga activ cu click-->
+            <label>EA Design PDF Generator</label>
+            <tab>pdfgeneratorconfig</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <pdford_opt translate="label">
+                    <label>Order</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <eadesign_pdfinv_ord translate="label">
+                            <label>Use For Order Backend</label>
+                            <frontend_type>select</frontend_type>
+                            <!--<source_model>eadesign/config</source_model>-->
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </eadesign_pdfinv_ord>
+                        <eadesign_pdfinv_ord_f translate="label">
+                            <label>Use For Order Frontend</label>
+                            <frontend_type>select</frontend_type>
+                            <!--<source_model>eadesign/config</source_model>-->
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </eadesign_pdfinv_ord_f>
+                        <eadesign_pdford_mail translate="label">
+                            <label>Send Order PDF Email</label>
+                            <frontend_type>select</frontend_type>
+                            <!--<source_model>eadesign/config</source_model>-->
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </eadesign_pdford_mail>
+                    </fields>
+                </pdford_opt>
+
+                <pdfinv_opt translate="label">
+                    <label>Invoice</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <eadesign_pdfinv_inv translate="label">
+                            <label>Use For Invoice Backend</label>
+                            <frontend_type>select</frontend_type>
+                            <!--<source_model>eadesign/config</source_model>-->
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </eadesign_pdfinv_inv>
+                        <eadesign_pdfinv_inv_f translate="label">
+                            <label>Use For Invoice Frontend</label>
+                            <frontend_type>select</frontend_type>
+                            <!--<source_model>eadesign/config</source_model>-->
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </eadesign_pdfinv_inv_f>
+                        <eadesign_pdfinv_mail translate="label">
+                            <label>Send Invoice PDF Email</label>
+                            <frontend_type>select</frontend_type>
+                            <!--<source_model>eadesign/config</source_model>-->
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </eadesign_pdfinv_mail>
+                    </fields>
+                </pdfinv_opt>
+
+                <pdfcm_opt translate="label">
+                    <label>Credit memo</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <eadesign_pdfinv_cm translate="label">
+                            <label>Use For Credit Memo Backend</label>
+                            <frontend_type>select</frontend_type>
+                            <!--<source_model>eadesign/config</source_model>-->
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </eadesign_pdfinv_cm>
+                        <eadesign_pdfinv_cm_f translate="label">
+                            <label>Use For Credit Memo Frontend</label>
+                            <frontend_type>select</frontend_type>
+                            <!--<source_model>eadesign/config</source_model>-->
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </eadesign_pdfinv_cm_f>
+                        <eadesign_pdfcm_mail translate="label">
+                            <label>Send Credit Memo PDF Email</label>
+                            <frontend_type>select</frontend_type>
+                            <!--<source_model>eadesign/config</source_model>-->
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </eadesign_pdfcm_mail>
+                    </fields>
+                </pdfcm_opt>
+
+                <pdfsp_opt translate="label">
+                    <label>Shipment</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <eadesign_pdfinv_sp translate="label">
+                            <label>Use For Shipment Backend</label>
+                            <frontend_type>select</frontend_type>
+                            <!--<source_model>eadesign/config</source_model>-->
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </eadesign_pdfinv_sp>
+                        <eadesign_pdfinv_sp_f translate="label">
+                            <label>Use For Shipment Frontend</label>
+                            <frontend_type>select</frontend_type>
+                            <!--<source_model>eadesign/config</source_model>-->
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </eadesign_pdfinv_sp_f>
+                        <eadesign_pdfsp_mail translate="label">
+                            <label>Send Shipment PDF Email</label>
+                            <frontend_type>select</frontend_type>
+                            <!--<source_model>eadesign/config</source_model>-->
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </eadesign_pdfsp_mail>
+                    </fields>
+                </pdfsp_opt>
+
+                <pdfinv_opt_prod translate="label">
+                    <label>Product</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>2</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <eadesign_pdfprod translate="label">
+                            <label>Use For Products</label>
+                            <frontend_type>select</frontend_type>
+                            <!--<source_model>eadesign/config</source_model>-->
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </eadesign_pdfprod>
+                    </fields>
+                </pdfinv_opt_prod>
+            </groups>
+        </pdfgeneratorconfig_opt>
+    </sections>
+</config>
